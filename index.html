@@ -77,14 +77,14 @@
 
   .hero h1 {
     font-family: var(--font-display);
-    font-size: clamp(3.125rem, 10vw, 6rem);
+    font-size: clamp(2.5rem, 4.5vw, 3.75rem);
     font-weight: 800; line-height: 1.05; letter-spacing: -0.02em;
     width: 100%; max-width: 900px;
     margin-bottom: 1.5rem;
     word-break: break-word; overflow-wrap: break-word;
     animation: fadeUp 0.7s 0.1s ease both;
   }
-  .hero h1 .accent { color: var(--orange); display: block; white-space: nowrap; }
+  .hero h1 .accent { color: var(--orange); display: block; }
 
   .hero-sub {
     font-size: clamp(0.95rem, 3.5vw, 1.15rem);
@@ -297,7 +297,7 @@
     /* Hero */
     .hero { padding: 6rem 5vw 3rem; }
     .hero h1 { font-size: 50px; letter-spacing: -0.02em; }
-    .hero h1 .accent { white-space: normal; }
+
     .hero-sub { font-size: 0.95rem; margin-bottom: 1.75rem; }
     .btn-primary, .btn-secondary { font-size: 0.95rem; padding: 0.85rem 1.5rem; }
     .hero-stats { grid-template-columns: 1fr 1fr; gap: 1rem 1.5rem; margin-top: 2.5rem; padding-top: 1.5rem; }
@@ -390,7 +390,7 @@ window.TallyConfig = {
     },
     "open": {
       "trigger": "time",
-      "ms": 2000
+      "ms": 4000
     }
   }
 };
