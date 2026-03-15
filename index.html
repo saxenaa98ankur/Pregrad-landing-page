@@ -34,9 +34,9 @@
     padding: 0.5rem 5vw;
     background: #0A0A0A;
     border-bottom: 0.5px solid rgba(255,255,255,0.08);
-    min-height: 60px;
+    min-height: 100px;
   }
-  .logo img { height: 44px; width: auto; display: block; }
+  .logo img { height: 88px; width: auto; display: block; }
   .nav-cta {
     background: var(--orange); color: var(--white) !important;
     font-family: var(--font-body); font-weight: 500; font-size: 0.85rem;
@@ -49,7 +49,7 @@
   .hero {
     min-height: 100vh;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
-    text-align: center; padding: 7rem 6vw 4rem;
+    text-align: center; padding: 9rem 6vw 4rem;
     position: relative; overflow: hidden;
   }
   .hero-grid-bg {
@@ -84,7 +84,7 @@
     word-break: break-word; overflow-wrap: break-word;
     animation: fadeUp 0.7s 0.1s ease both;
   }
-  .hero h1 .accent { color: var(--orange); display: block; }
+  .hero h1 .accent { color: var(--orange); display: block; white-space: nowrap; }
 
   .hero-sub {
     font-size: clamp(0.95rem, 3.5vw, 1.15rem);
@@ -290,13 +290,14 @@
     section { padding: 3rem 5vw; }
 
     /* Nav */
-    nav { padding: 0.5rem 5vw; min-height: 56px; }
-    .logo img { height: 36px; }
+    nav { padding: 0.5rem 5vw; min-height: 84px; }
+    .logo img { height: 72px; }
     .nav-cta { font-size: 0.8rem; padding: 0.5rem 1rem; }
 
     /* Hero */
     .hero { padding: 6rem 5vw 3rem; }
     .hero h1 { font-size: 50px; letter-spacing: -0.02em; }
+    .hero h1 .accent { white-space: normal; }
     .hero-sub { font-size: 0.95rem; margin-bottom: 1.75rem; }
     .btn-primary, .btn-secondary { font-size: 0.95rem; padding: 0.85rem 1.5rem; }
     .hero-stats { grid-template-columns: 1fr 1fr; gap: 1rem 1.5rem; margin-top: 2.5rem; padding-top: 1.5rem; }
@@ -387,8 +388,6 @@ window.TallyConfig = {
       "text": "👋",
       "animation": "wave"
     },
-    "autoClose": 0,
-    "formEventsForwarding": true,
     "open": {
       "trigger": "time",
       "ms": 2000
@@ -396,7 +395,6 @@ window.TallyConfig = {
   }
 };
 </script>
-
 <script async src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
@@ -412,7 +410,7 @@ window.TallyConfig = {
   <div class="hero-grid-bg"></div>
   <div class="hero-glow"></div>
   <div class="hero-pill"><span class="pill-dot"></span> India's most in-demand marketing skill · 2026</div>
-  <h1>Become a<br><span class="accent">Performance<br>Marketer.</span></h1>
+  <h1>Become a<br><span class="accent">Performance Marketer.</span></h1>
   <p class="hero-sub">The 40-hour, 100% hands-on bootcamp that turns freshers into job-ready Performance Marketers — with AI skills, a live campaign portfolio, and real placement support.</p>
   <div class="hero-cta-group">
     <a href="#enroll" class="btn-primary">Get Job Ready in 40 Hours →</a>
